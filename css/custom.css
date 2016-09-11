@@ -1,0 +1,53 @@
+h3{
+    color: #88b917;
+    text-transform: capitalize;
+}
+.contact h3{
+    /*temporary made unvisible */
+    display: none;
+}
+.centreer{
+  display:block;
+  margin: 0 auto;
+}
+.uk-navbar{
+  border-radius:5px;
+}
+div.uk-vertical-align.uk-text-center{
+  border-radius:5px;
+}
+.uk-navbar{
+  padding-bottom:10px;
+}
+ul.uk-navbar-nav{
+  padding-top:7px
+}
+.uk-panel-box{
+  background-color :#eeeeee;
+  border-radius : 5px;
+}
+dl.contact-address.dl-horizontal{
+  padding-left:4px;
+}
+.smartshadow span{
+  background-color:rgba(128,128,128,0.9); 
+}
+.smartshadow{
+  color:seashell;
+  text-shadow:1px 1px darkblue;
+}
+.uk-button-primary{
+  background-color:#88B917;
+}
+.uk-button-primary:hover{
+  background-color:olive;
+}
+a, .uk-link{
+  color:#88B917;
+}
+.uk-position-cover > span{
+  display:none;
+}
+p.smart_bottom{
+  margin-bottom:25px;
+}

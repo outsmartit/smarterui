@@ -1,0 +1,246 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 27, 2015, 8:40:47 PM
+    Author     : Dd
+*/
+.tooltip {
+	position: absolute;
+	z-index: 103000;
+	display: block;
+	visibility: visible;
+	font-size: 11px;
+	line-height: 1.4;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.tooltip.in {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.tooltip.top {
+	margin-top: -3px;
+	padding: 5px 0;
+}
+.tooltip.right {
+	margin-left: 3px;
+	padding: 0 5px;
+}
+.tooltip.bottom {
+	margin-top: 3px;
+	padding: 5px 0;
+}
+.tooltip.left {
+	margin-left: -3px;
+	padding: 0 5px;
+}
+.tooltip-inner {
+	max-width: 200px;
+	padding: 8px;
+	color: #d04526;
+	text-align: left;
+	text-decoration: none;
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: lightcoral;
+}
+.tooltip.right .tooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -5px;
+	border-width: 5px 5px 5px 0;
+	border-right-color: #000;
+}
+.tooltip.left .tooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -5px;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #000;
+}
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000;
+}
+.element-invisible {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+#filter-search {
+	vertical-align: top;
+}
+/*
+SMARTERUI Specifics
+*/
+ul.category-module, ul.title-area{
+    list-style: none;
+    padding: 0;
+}
+ul.ui-article-info, ul.ui-blog-view{
+    list-style:none outside;
+    padding-left: 0;
+}
+ul.actions{
+    float: right;
+    margin-top: 1.5rem;
+    padding-right: 15px;
+}
+ul.social li, ul.actions li, ul.pagenav li, ul.inline li{
+    display: inline;
+}
+ul.inline{
+    list-style: none;
+    padding-left:0;
+}
+a.uk-badge:hover{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+}
+a.uk-badge{
+    padding:5px;
+}
+li.createdby, li.author, li.category-name, li.published, li.hits, .actions a{
+    font-size: 0.75rem;
+}
+i{
+    padding-right: 4px;
+}
+ul.pagenav, ul.social{
+    padding-left: .2rem;
+}
+.social i{
+    font-size: 1.75rem;
+}
+.contact-form{
+    background-color: gainsboro;
+    padding: 10px;
+}
+.contact-form .form-actions{
+    margin-top: 10px;
+}
+.uk-navbar{
+    min-height: 54px;
+    padding-top: 10px;
+}
+/* taken over from Foundation to style the input type*/
+input[type="text"],
+input[type="password"], input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="month"], input[type="week"],
+input[type="email"], input[type="number"], input[type="search"],
+input[type="tel"], input[type="time"], input[type="url"], input[type="color"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+    -moz-transition: border-color 0.15s linear, background 0.15s linear;
+    -ms-transition: border-color 0.15s linear, background 0.15s linear;
+    -o-transition: border-color 0.15s linear, background 0.15s linear;
+    transition: border-color 0.15s linear, background 0.15s linear;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
+    background: #fafafa;
+    border-color: #999999;
+    outline: none;
+}
+
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="month"]:disabled, input[type="week"]:disabled, input[type="email"]:disabled, input[type="number"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="color"]:disabled, textarea:disabled {
+    background-color: #DDDDDD;
+    cursor: default;
+}
+
+input[type="text"][disabled], input[type="text"][readonly], fieldset[disabled] input[type="text"],
+input[type="password"][disabled], input[type="password"][readonly],
+fieldset[disabled] input[type="password"], input[type="date"][disabled],
+input[type="date"][readonly], fieldset[disabled] input[type="date"],
+input[type="datetime"][disabled], input[type="datetime"][readonly],
+fieldset[disabled] input[type="datetime"], input[type="datetime-local"][disabled],
+input[type="datetime-local"][readonly], fieldset[disabled] input[type="datetime-local"],
+input[type="month"][disabled], input[type="month"][readonly], fieldset[disabled] input[type="month"],
+input[type="week"][disabled], input[type="week"][readonly], fieldset[disabled] input[type="week"],
+input[type="email"][disabled], input[type="email"][readonly], fieldset[disabled] input[type="email"],
+input[type="number"][disabled], input[type="number"][readonly],
+fieldset[disabled] input[type="number"], input[type="search"][disabled],
+input[type="search"][readonly], fieldset[disabled] input[type="search"],
+input[type="tel"][disabled], input[type="tel"][readonly], fieldset[disabled] input[type="tel"],
+input[type="time"][disabled], input[type="time"][readonly], fieldset[disabled] input[type="time"],
+input[type="url"][disabled], input[type="url"][readonly], fieldset[disabled] input[type="url"],
+input[type="color"][disabled], input[type="color"][readonly], fieldset[disabled] input[type="color"],
+textarea[disabled], textarea[readonly], fieldset[disabled] textarea {
+    background-color: #DDDDDD;
+    cursor: default;
+}
+
+input[type="text"].radius, input[type="password"].radius, input[type="date"].radius,
+input[type="datetime"].radius, input[type="datetime-local"].radius,
+input[type="month"].radius, input[type="week"].radius, input[type="email"].radius,
+input[type="number"].radius, input[type="search"].radius, input[type="tel"].radius,
+input[type="time"].radius, input[type="url"].radius, input[type="color"].radius,
+
+textarea.radius {
+    border-radius: 3px;
+}
+textarea{
+    max-width: 100%;
+    height: 5rem;
+}
+.uk-alert-message{
+  background: #f2fae3;
+  color: #659f13;
+}
+dd.smartinline{
+    display: inline;
+}
+.uk-breadcrumb{
+    display: inline;
+}
+.uk-dropdown ul{
+    list-style-type: none;
+}
+.uk-dropdown{
+    width:220px;
+}
